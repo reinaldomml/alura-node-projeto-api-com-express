@@ -1,0 +1,25 @@
+{
+    "name": "alura-node-projeto-api-com-express",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/reinaldomml/alura-node-projeto-api-com-express.git"
+    },
+    "keywords": [],
+    "author": "Reinaldo Martinez",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/reinaldomml/alura-node-projeto-api-com-express/issues"
+    },
+    "homepage": "https://github.com/reinaldomml/alura-node-projeto-api-com-express#readme",
+    "dependencies": {
+        "express": "^4.18.2",
+        "nodemon": "^3.0.1"
+    }
+}
