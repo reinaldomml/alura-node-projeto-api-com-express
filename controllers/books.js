@@ -1,4 +1,10 @@
-const { getAllBooks } = require('../services/books')
+const {
+    getAllBooks,
+    getBookbyId,
+    insertNewBook,
+    editBook,
+    deleteBookbyId,
+} = require('../services/books')
 
 function getBooks(req, res) {
     try {
@@ -9,9 +15,36 @@ function getBooks(req, res) {
     }
 }
 
+function getBook(req, res) {
+    try {
+        const id = req.params.id
+
+        if (id && Number(id)) {
+            // Number(2) -> 2
+            // Number('batata') -> NaN
+            const book = getBookbyId(id)
+            res.send(book)
+        } else {
+            res.status(422)
+            res.send('Id is not valid')
+        }
+    } catch (err) {
+        res.status(500).send(err.message)
+    }
+}
+
 function postBooks(req, res) {
     try {
-        res.send('Sucessfully POST')
+        const newBook = req.body
+
+        if (newBook.nome !== null && newBook.nome !== undefined) {
+            insertNewBook(newBook)
+            res.status(201)
+            res.send('Sucessfully POST - New Book Added')
+        } else {
+            res.status(422)
+            res.send('Name of book is necessary')
+        }
     } catch (err) {
         res.status(500).send(err.message)
     }
@@ -19,18 +52,36 @@ function postBooks(req, res) {
 
 function pathBooks(req, res) {
     try {
-        res.send('Sucessfully PATH')
+        const id = req.params.id
+
+        if (id && Number(id)) {
+            const newData = req.body
+
+            editBook(id, newData)
+            res.send('Sucessfully PATH - Book edited')
+        } else {
+            res.status(422)
+            res.send('Id is not valid')
+        }
     } catch (err) {
         res.status(500).send(err.message)
     }
 }
 
-function deletebooks(req, res) {
+function deleteBooks(req, res) {
     try {
-        res.send('Sucessfully DELETE')
+        const id = req.params.id
+
+        if (id && Number(id)) {
+            deleteBookbyId(id)
+            res.send('Sucessfully DELETE - Book deleted')
+        } else {
+            res.status(422)
+            res.send('Id is not valid')
+        }
     } catch (err) {
         res.status(500).send(err.message)
     }
 }
 
-module.exports = { getBooks, postBooks, pathBooks, deletebooks }
+module.exports = { getBooks, getBook, postBooks, pathBooks, deleteBooks }

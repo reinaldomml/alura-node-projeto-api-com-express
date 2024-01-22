@@ -3,6 +3,9 @@ const routeBooks = require('./routes/books')
 
 const app = express()
 
+// Agora a aplicação aceita receber body do tipo JSON
+app.use(express.json())
+
 // Nesse caso a porta 3000 seria o Front e 8000 seria o Back
 const port = 8000
 
@@ -10,7 +13,7 @@ const port = 8000
 app.use('/books', routeBooks)
 
 app.listen(port, () => {
-    console.log(`Listening on port ${port}!`)
+    console.log(`Listening on port ${port}`)
 })
 
 /* O que são APIS, analogia
