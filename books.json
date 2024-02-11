@@ -1,9 +1,122 @@
 [
-    { "id": "1", "nome": "Livro irado" },
-    { "id": "2", "nome": "Livro maravilhoso" },
-    { "id": "4", "nome": "Livro incrivel de Python" },
-    { "id": "5", "nome": "Livro incrivel de C#" },
-    { "id": "6", "nome": "Livro de SQL" },
-    { "id": "7", "nome": "Livro de Rust" },
-    { "id": "12", "nome": "Livro de Rust 2024" }
+    {
+        "id": 1,
+        "src": "https://readriordan.com/wp-content/uploads/2022/02/Lightning-Thief-flat-cover.png",
+        "title": "The Hobbit",
+        "author": "J.R.R. Tolkien"
+    },
+    {
+        "id": 2,
+        "src": "https://readriordan.com/wp-content/uploads/2022/02/Lightning-Thief-flat-cover.png",
+        "title": "The Dark Tower",
+        "author": "Stephen King"
+    },
+    {
+        "id": 3,
+        "src": "https://readriordan.com/wp-content/uploads/2022/02/Lightning-Thief-flat-cover.png",
+        "title": "The Lord of the Rings",
+        "author": "J.R.R. Tolkien"
+    },
+    {
+        "id": 4,
+        "src": "https://readriordan.com/wp-content/uploads/2022/02/Lightning-Thief-flat-cover.png",
+        "title": "The Shining",
+        "author": "Stephen King"
+    },
+    {
+        "id": 5,
+        "src": "https://readriordan.com/wp-content/uploads/2022/02/Lightning-Thief-flat-cover.png",
+        "title": "1984",
+        "author": "George Orwell"
+    },
+    {
+        "id": 6,
+        "src": "https://readriordan.com/wp-content/uploads/2022/02/Lightning-Thief-flat-cover.png",
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee"
+    },
+    {
+        "id": 7,
+        "src": "https://readriordan.com/wp-content/uploads/2022/02/Lightning-Thief-flat-cover.png",
+        "title": "Pride and Prejudice",
+        "author": "Jane Austen"
+    },
+    {
+        "id": 8,
+        "src": "https://readriordan.com/wp-content/uploads/2022/02/Lightning-Thief-flat-cover.png",
+        "title": "The Catcher in the Rye",
+        "author": "J.D. Salinger"
+    },
+    {
+        "id": 9,
+        "src": "https://readriordan.com/wp-content/uploads/2022/02/Lightning-Thief-flat-cover.png",
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald"
+    },
+    {
+        "id": 10,
+        "src": "https://readriordan.com/wp-content/uploads/2022/02/Lightning-Thief-flat-cover.png",
+        "title": "Moby-Dick",
+        "author": "Herman Melville"
+    },
+    {
+        "id": 11,
+        "src": "https://readriordan.com/wp-content/uploads/2022/02/Lightning-Thief-flat-cover.png",
+        "title": "Harry Potter and the Sorcerer's Stone",
+        "author": "J.K. Rowling"
+    },
+    {
+        "id": 12,
+        "src": "https://readriordan.com/wp-content/uploads/2022/02/Lightning-Thief-flat-cover.png",
+        "title": "The Da Vinci Code",
+        "author": "Dan Brown"
+    },
+    {
+        "id": 13,
+        "src": "https://readriordan.com/wp-content/uploads/2022/02/Lightning-Thief-flat-cover.png",
+        "title": "The Adventures of Sherlock Holmes",
+        "author": "Arthur Conan Doyle"
+    },
+    {
+        "id": 14,
+        "src": "https://readriordan.com/wp-content/uploads/2022/02/Lightning-Thief-flat-cover.png",
+        "title": "The Picture of Dorian Gray",
+        "author": "Oscar Wilde"
+    },
+    {
+        "id": 15,
+        "src": "https://readriordan.com/wp-content/uploads/2022/02/Lightning-Thief-flat-cover.png",
+        "title": "Frankenstein",
+        "author": "Mary Shelley"
+    },
+    {
+        "id": 16,
+        "src": "https://readriordan.com/wp-content/uploads/2022/02/Lightning-Thief-flat-cover.png",
+        "title": "The Odyssey",
+        "author": "Homer"
+    },
+    {
+        "id": 17,
+        "src": "https://readriordan.com/wp-content/uploads/2022/02/Lightning-Thief-flat-cover.png",
+        "title": "Don Quixote",
+        "author": "Miguel de Cervantes"
+    },
+    {
+        "id": 18,
+        "src": "https://readriordan.com/wp-content/uploads/2022/02/Lightning-Thief-flat-cover.png",
+        "title": "One Hundred Years of Solitude",
+        "author": "Gabriel García Márquez"
+    },
+    {
+        "id": 19,
+        "src": "https://readriordan.com/wp-content/uploads/2022/02/Lightning-Thief-flat-cover.png",
+        "title": "Alice's Adventures in Wonderland",
+        "author": "Lewis Carroll"
+    },
+    {
+        "id": 20,
+        "src": "https://readriordan.com/wp-content/uploads/2022/02/Lightning-Thief-flat-cover.png",
+        "title": "The Hunger Games",
+        "author": "Suzanne Collins"
+    }
 ]
